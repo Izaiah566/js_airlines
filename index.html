@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <title>Javascript Airlines</title>
+</head>
+<body>
+    <h1>Flight Plan Submission</h1>
+    <form id="flightPlanForm">
+        <label></label>
+        <label>Airline: <input type="text" name="aircraftType" required></label><br><br>
+        <label>Flight Number: <input type="text" name="flightNumber" required></label><br><br>
+        <label>Departure Airport: <input type="text" name="departureAirport" required></label><br><br>
+        <label>Arrival Airport: <input type="text" name="arrivalAirport" required></label><br><br>
+        <label>Departure Date: <input type="date" name="departureDate" required></label><br><br>
+        <label>Arrival Date: <input type="date" name="arrivalDate" required></label><br><br>
+        <label>Departure Time: <input type="time" name="departureTime" required></label><br><br>
+        <label>Arrival Time: <input type="time" name="arrivalTime" required></label><br><br>
+        
+        <button type="submit">Submit Flight Plan</button>
+      </form>
+    
+      <h3>Submitted Flight Plan:</h3>
+      <table id="submitTable">
+        <tr>
+            <th>flight Number</th>
+            <th>Departure Airport</th>
+            <th>Arrival Airport</th>
+            <th>Departure Date</th>
+            <th>Arrival Date</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Passenger Count</th>
+            <th>Airline</th>
+            <th>Flight Duration</th>
+        </tr>
+        <tr>
+        </tr>
+      </table>
+    
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
