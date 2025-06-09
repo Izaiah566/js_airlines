@@ -9,21 +9,20 @@
 <body>
     <h1>Flight Plan Submission</h1>
     <form id="flightPlanForm">
-        <label></label>
-        <label>Airline: <input type="text" name="aircraftType" required></label><br><br>
-        <label>Flight Number: <input type="text" name="flightNumber" required></label><br><br>
-        <label>Departure Airport: <input type="text" name="departureAirport" required></label><br><br>
-        <label>Arrival Airport: <input type="text" name="arrivalAirport" required></label><br><br>
-        <label>Departure Date: <input type="date" name="departureDate" required></label><br><br>
-        <label>Arrival Date: <input type="date" name="arrivalDate" required></label><br><br>
-        <label>Departure Time: <input type="time" name="departureTime" required></label><br><br>
-        <label>Arrival Time: <input type="time" name="arrivalTime" required></label><br><br>
+        <label>Airline: <input type="text" name="aircraftType" id="airline" required></label><br><br>
+        <label>Flight Number: <input type="text" name="flightNumber"></label><br><br>
+        <label>Departure Airport: <input type="text" name="departureAirport"></label><br><br>
+        <label>Arrival Airport: <input type="text" name="arrivalAirport"></label><br><br>
+        <label>Departure Date: <input type="date" name="departureDate"></label><br><br>
+        <label>Arrival Date: <input type="date" name="arrivalDate"></label><br><br>
+        <label>Departure Time: <input type="time" name="departureTime"></label><br><br>
+        <label>Arrival Time: <input type="time" name="arrivalTime"></label><br><br>
         
         <button type="submit">Submit Flight Plan</button>
       </form>
     
       <h3>Submitted Flight Plan:</h3>
-      <pre id="output"></pre>>
+      <div id="output"></div>
     
     <script src="./js/scripts.js"></script>
 </body>

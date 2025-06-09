@@ -1,0 +1,9 @@
+For that exercise, you’re form will ask a user for an item to look up. I recommend keeping it simple and starting with just the airline name.
+Then, you take the name the user wants to search for and search for that in the JSON array you get back form the API.
+Using the filter() method is what I recommend to filter the array down to just the airline the user is searching for.
+Once you have it working with airline you can try adding other items to the form and doing more complex, or additional, searches.
+4:39
+Your form is already correctly setup, you just need to simplify it a bit so you don’t have to fill out every field.
+Then, take the value from the form and use it to filter the API response, and return those values to the browser by adding them to the DOM.
+4:40
+the practice exercises are there to help you be familiar with using methods like filter()

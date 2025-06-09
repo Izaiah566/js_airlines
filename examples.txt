@@ -1,0 +1,52 @@
+ex 1:
+<!-- index.html -->
+<form id="airline-form">
+  <label for="airline">Enter Airline Name:</label>
+  <input type="text" id="airline" name="airline" required />
+  <button type="submit">Search Flights</button>
+</form>
+
+<div id="results"></div>
+
+
+ex 2:
+<script>
+document.getElementById('airline-form').addEventListener('submit', async function(event) {
+  event.preventDefault();
+
+  const airline = document.getElementById('airline').value;
+  const resultsDiv = document.getElementById('results');
+  resultsDiv.innerHTML = "Loading...";
+
+  try {
+    // Replace this URL with your actual API endpoint and API key
+    const response = await fetch(`https://api.example.com/flights?airline=${encodeURIComponent(airline)}&access_key=YOUR_API_KEY`);
+    
+    if (!response.ok) {
+      throw new Error("Network response was not OK");
+    }
+
+    const data = await response.json();
+
+    // Display flight data
+    resultsDiv.innerHTML = formatFlightData(data);
+  } catch (error) {
+    resultsDiv.innerHTML = `Error: ${error.message}`;
+  }
+});
+
+function formatFlightData(data) {
+  if (!data || data.length === 0) {
+    return "No flights found.";
+  }
+
+  return data.map(flight => `
+    <div class="flight">
+      <h3>${flight.flight_number || 'N/A'} - ${flight.departure_airport} ➝ ${flight.arrival_airport}</h3>
+      <p>Status: ${flight.status || 'Unknown'}</p>
+      <p>Departure: ${flight.departure_time || 'N/A'}</p>
+      <p>Arrival: ${flight.arrival_time || 'N/A'}</p>
+    </div>
+  `).join('');
+}
+</script>

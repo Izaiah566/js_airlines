@@ -1,0 +1,15 @@
+How to create a javascript airlines?
+
+How to create a javascript airlines with HTML? 
+
+ //    const formData = new FormData(form);
+    //    const flightPlan = {};
+    //    for (const [key, value] of formData.entries()) {
+    //        flightPlan[key] = value;
+    //    }
+
+    //    output.textContent = JSON.stringify(flightPlan, null, 2); // Display data nicely
+    //});
+
+
+I have the form that is used to accept airline name and display the information of the flight using API. Could you show me the steps of displaying the results on the website?

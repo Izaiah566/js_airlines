@@ -14,9 +14,7 @@ form {
 }
 
 input, select, textarea {
-    width: 100%;
     padding: 0.8rem;
-    margin-bottom: 1.2rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     transition: border-color 0.3s ease;
